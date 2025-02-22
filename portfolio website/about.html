@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRAJAKTA PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left"><u>PRAJAKTA'S PORTFOLIO</u></div>
+
+        <div class="right">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="education.html">EDUCATION</a></li>
+            <li><a href="project.html">PROJECT</a></li>
+            <li><a href="skills.html">SKILLS</a></li>
+            <li><a href="resume.html">RESUME</a></li>
+            <li><a href="contact.html">CONTACT ME</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    //main wesite starts from header
+    <main>
+      <div class="about-section">
+        <h2>About Me</h2>
+        <div class="info-box">
+          <button class="toggle-btn" onclick="togglePopup('hackathonPopup')">
+            <span>&#x2193;</span> Hackathon
+          </button>
+          <div id="hackathonPopup" class="popup-content">
+          <p>I thrive in the competitive atmosphere of hackathons, utilizing them as an opportunity to demonstrate my creativity, problem-solving skills, and leadership abilities. With experience in high-stakes events like MITCORER HACKTHON AND  AIT INNERVE , I have consistently delivered innovative solutions under tight deadlines. My approach blends analytical thinking with effective team coordination, ensuring successful project execution. These experiences have sharpened my leadership qualities, enabling me to motivate and guide teams toward achieving remarkable results, making me a valuable asset in any fast-paced challenge.</p> 
+          </div>
+        </div>
+        
+        <div class="info-box">
+          <button class="toggle-btn" onclick="togglePopup('internshipPopup')">
+            <span>&#x2193;</span> Internship
+          </button>
+          <div id="internshipPopup" class="popup-content">
+            <p>During my internship in machine learning with Eduversity, in collaboration with Wipro, I had the opportunity to work on a range of impactful projects, including credit card fraud detection and disease detection systems. Through these projects, I applied my knowledge of machine learning algorithms to solve real-world problems, enhancing my understanding of data analysis, model development, and implementation. This experience allowed me to gain hands-on experience in deploying machine learning models, while also refining my problem-solving skills and ability to work efficiently in a professional environment.
+              <ul>
+                <li><a href="Edu-versityLOR.pdf" target="_blank">Letter of Recommendation</a></li>
+                <li><a href="path/to/your/certificate.pdf" target="_blank">Certificate of Internship</a></li>
+              </ul>
+            </p>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <button class="toggle-btn" onclick="togglePopup('aboutMePopup')">
+            <span>&#x2193;</span> About Me
+          </button>
+          <div id="aboutMePopup" class="popup-content">
+            <p>Hi 👋, I am Prajakta Gujar , an enthusiastic and dedicated individual with a passion for software skills  and continuous learning. My journey in technology has equipped me with a diverse skill set and a keen eye for detail, making me a valuable asset to any team.</p>
+          </div>
+        </div>
+        <div class="info-box">
+          <button class="toggle-btn" onclick="togglePopup('hire')">
+            <span>&#x2193;</span> Why hire me
+          </button>
+          <div id="hire" class="popup-content">
+            <p>  
+
+              I am a dynamic and results-driven individual with a strong foundation in software development, problem-solving, and leadership. My experience in **hackathons** has honed my ability to think innovatively under pressure, collaborate effectively, and deliver impactful solutions. Additionally, my participation in **debate competitions** has strengthened my communication skills, making me adept at articulating ideas clearly and persuasively.  
+              
+              Through my **internship in machine learning with Eduversity & Wipro**, I have worked on real-world projects like **credit card fraud detection and disease diagnosis**, demonstrating my technical expertise and ability to apply theoretical knowledge in practical scenarios. These experiences, combined with my passion for continuous learning and adaptability, make me well-suited for growing IT industry, where I can contribute meaningfully while growing as a professional.</p>
+          </div>
+        </div>
+
+
+
+
+
+
+      </div>
+      
+    
+  
+  <style>
+    /* Your CSS styles go here */
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .about-section {
+      padding: 20px;
+    }
+
+    .info-box {
+      margin: 10px 0;
+    }
+
+    .toggle-btn {
+      background-color: #f1f1f1;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      width: 100%;
+      text-align: left;
+    }
+
+    .toggle-btn span {
+      font-size: 20px;
+    }
+
+    .popup-content {
+      display: none;
+      padding: 10px;
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+      margin-top: 5px;
+      border-radius: 5px;
+      color: black;
+    }
+
+    .popup-content p {
+      margin: 0;
+    }
+
+    .popup-content.show {
+      display: block;
+    }
+  </style>
+
+  
+    
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    function togglePopup(id) {
+      var popup = document.getElementById(id);
+      popup.classList.toggle('show');
+    }
+  </script>
+
+
+
+
+
+
+    
+  </body>
+</html>
